@@ -1,0 +1,328 @@
+@font-face {
+  font-family: Charter;
+  src: url(../fonts/charter/ttf/Charter\ Regular.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: Charter;
+  src: url(../fonts/charter/ttf/Charter\ Bold.ttf);
+  font-weight: 600;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Charter;
+}
+
+body {
+  color: hsl(0, 0%, 22%);
+}
+
+.navbar {
+  padding: 0.9375rem;
+  width: 100%;
+  z-index: 1050;
+  background: #d7cdd559 !important;
+}
+
+a.nav-link > p:hover {
+  color: #ff0780 !important;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.page-header .content-center {
+  position: absolute;
+  top: 50%;
+  /* left: 50%; */
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding: 0 15px;
+  width: 100%;
+  max-width: 880px;
+}
+
+.page-header .content-center.brand {
+  width: 100%;
+}
+.brand-h1 {
+  font-size: 63px;
+}
+
+.brand-p {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 5px 0px;
+  margin-bottom: 5%;
+}
+
+#canvas1 {
+  border: 2px solid white;
+  width: 263px;
+  height: 370px;
+}
+
+.explorer-p {
+  padding: 43px 0px;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+}
+.explore-btn {
+  font-size: 2rem !important;
+}
+.card {
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #281e53 inset;
+  cursor: pointer;
+  height: 93%;
+}
+.card:hover {
+  box-shadow: 10px 1000px 1px #281e53 inset;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #3d7481, #d15bcd);
+}
+
+.card p {
+  color: black;
+}
+.explorer-img {
+  position: relative;
+  left: 56px;
+  top: 30px;
+}
+.decentralize {
+  /* background-image: url("../img/cp.png"); */
+  /* background-size: cover; */
+  height: 80vh;
+}
+.dech1 {
+  color: #ffffff;
+  /* margin-top: 1%; */
+  margin-bottom: 15px;
+}
+.centered {
+  /* position: relative;
+  top: 15%; */
+  /* left: 0%; */
+  text-align: center;
+}
+
+.decentp {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.decenth1 {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.our-btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #ae9f9f91;
+  border-radius: 10px;
+}
+
+.our-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #171941;
+}
+
+.btn-2 {
+  background-image: linear-gradient( to right, #f265ca 0%, #a6c1ee 51%, #ec22b3 100% );
+  color: #fbf3f3;
+}
+
+.btn-3 {
+  background-image: linear-gradient( to right, #e84cbc 0%, #a6c1ee 51%, #ee4fc1 100% )
+}
+
+a.button {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-family: "Avenir Next";
+  font-size: 1rem;
+  padding: 0.5rem 3rem;
+  color: #ff0780;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #281e53 inset;
+  cursor: pointer;
+}
+
+a.button:hover {
+  box-shadow: none;
+  color: white;
+}
+
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+
+#token {
+  height: 121%;
+  font-family: 'Segoe UI', sans-serif;
+}
+.card-title{
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.theme-color {
+  color: #ff0780;
+}
+
+.card .card-body .card-title {
+  /* color: #FF0780; */
+  text-transform: inherit;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 0.75rem;
+}
+
+/* FLAME ANIMATION */
+/* svg {
+  width:300px;
+  margin-top:60px;
+} */
+circle {
+  fill: #fff;
+  animation: flame 2s ease-out infinite;
+}
+#ci2 {
+  animation-delay: -0.5s;
+}
+#ci3 {
+  animation-delay: -1s;
+}
+#ci4 {
+  animation-delay: -1.5s;
+}
+
+@keyframes flame {
+  from {
+    r: 1px;
+    opacity: 0.8;
+  }
+  to {
+    r: 28px;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  #token {
+    height: 121%;
+  }
+  .flamey {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 720) {
+  #token {
+    height: 121%;
+  }
+  .flamey {
+    display: none;
+  }
+}
+
+.btn.btn-icon.btn-simple,
+.navbar .navbar-nav > a.btn.btn-icon.btn-simple {
+  font-size: 26px;
+  margin: 1px;
+  padding: 5px;
+}
+
+#mainy {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: -o-linear-gradient(top, rgba(40, 30, 83, 0.493), #257eb7);
+  background: -ms-linear-gradient(top, rgba(40, 30, 83, 0.493), #257eb7);
+  background: -moz-linear-gradient(top, rgba(40, 30, 83, 0.493), #257eb7);
+  background: -webkit-linear-gradient(top, rgba(15, 11, 32, 0.568), #021522);
+  /* background: -webkit-linear-gradient(top, #4527A0, #4115c5); full_bg 1 */
+  background: linear-gradient(top, rgb(34, 31, 31), #257eb7);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429', EndColorStr='#257eb7');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429', EndColorStr='#257eb7')";
+}
+#pixie {
+  /* z-index: 10; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.jumbotron {
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #1a424d, #471a46);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  /* box-shadow: 2px 1000px 1px #3e0946 inset; */
+  box-shadow: 2px 1000px 1px #4527a0
+
+  inset;
+}
+
+
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.camtainer{
+  display: grid;
+  place-content: left;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .explorer-p {
+   
+    font-size: 17px;
+  }
+  .decentralize {
+    /* background-image: url("../img/cp.png"); */
+    /* background-size: cover; */
+    height: 100vh;
+}
+}
